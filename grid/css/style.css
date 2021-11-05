@@ -19,6 +19,22 @@ body {
     justify-content: center;
 }
 
+.grid_areas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 15vw 20vw 20vw 20vw;
+    grid-template-rows: 5vh 80vh 5vh;
+    grid-template-areas:
+        'hd hd hd hd'
+        'sd main main main'
+        'ft ft ft ft';
+    column-gap: 1px;
+    row-gap: 1px;
+    margin: auto;
+    border: 2px solid green;
+    justify-content: center;
+}
+
 .box {
     display: flex;
     align-items: center;
@@ -27,16 +43,24 @@ body {
     border: 1px solid black;
 }
 
+.header {
+    grid-area: hd;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.main_content {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: ft;
+}
+
 #top {
     grid-area: top;
-}
-
-#topCenter {
-    grid-area: topCenter;
-}
-
-#topRight {
-    grid-area: topRight;
 }
 
 #bottomLeft {
