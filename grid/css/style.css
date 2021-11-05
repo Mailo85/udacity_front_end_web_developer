@@ -7,28 +7,46 @@ body {
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20vw 20vw 50vw;
+    grid-template-rows: 30vh 25vh;
+    grid-template-areas:
+        'top top top'
+        'bottomLeft bottomCenter bottomRight';
+    column-gap: 10px;
+    row-gap: 10px;
     margin: auto;
     border: 2px solid green;
+    justify-content: center;
 }
 
 .box {
     display: flex;
-    box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 4px;
-    padding: 10px;
     background-color: cornflowerblue;
+    border: 1px solid black;
 }
 
-.green {
-    background-color: green;
-    border: 2px solid red;
+#top {
+    grid-area: top;
 }
 
-.pink {
-    background-color: pink;
-    border: 2px solid green;
+#topCenter {
+    grid-area: topCenter;
+}
+
+#topRight {
+    grid-area: topRight;
+}
+
+#bottomLeft {
+    grid-area: bottomLeft;
+}
+
+#bottomCenter {
+    grid-area: bottomCenter;
+}
+
+#bottomRight {
+    grid-area: bottomRight;
 }

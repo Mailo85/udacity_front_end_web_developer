@@ -19,14 +19,15 @@ body {
     height: 400px;
     margin: 4px;
     padding: 50px;
-    border: 2px solid red;
     background-color: cornflowerblue;
 }
 
 .green {
     background-color: green;
+    border: 2px solid red;
 }
 
 .pink {
     background-color: pink;
+    border: 2px solid green;
 }
