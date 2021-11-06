@@ -5,6 +5,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
 }
 
 p {
@@ -36,8 +37,8 @@ ul li {
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: 3em 2em 80vh 3em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 2em 70vh 3em;
     grid-template-areas:
         'header'
         'navbar'
@@ -53,8 +54,8 @@ ul li {
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-columns: 50%-0.2em 50%-0.2em;
-    grid-template-rows: 50%-0.2em 50%-0.2em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         'one two'
         'three four';
@@ -89,16 +90,25 @@ ul li {
 .card-header .post-title {
     color: rgb(126, 9, 9);
     font-weight: 600;
+    margin: 0;
 }
 
 .card-header .post-date {
-    font-size: smaller;
+    margin-top: 3em;
+    font-size: 0.7em;
+    font-variant: small-caps;
 }
 
 .card-header .post-author {
+    margin: 0;
     color: black;
     font-weight: 600;
-    font-size: smaller;
+    font-size: 0.8em;
+}
+
+.card-header img {
+    width: 1.5em;
+    margin-right: 5px;
 }
 
 .card-header a {
@@ -151,15 +161,24 @@ ul li {
 
 #footer {
     grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
     color: black;
     font-size: small;
-    align-items: center;
+    margin-top: 0.5em;
     padding-left: 1em;
+    padding-right: 1em;
     box-shadow: 0px 2px 4px grey;
     /* border: 1px solid red; */
 }
 
-@media (min-width: 980px) {
+#footer img {
+    width: 1.5em;
+    margin-right: 4px;
+}
+
+@media (min-width: 700px) {
     .container {
         display: grid;
         width: 90%;
@@ -179,8 +198,8 @@ ul li {
     .blog-card-container {
         column-gap: 0.5em;
         row-gap: 0.5em;
-        grid-template-columns: 50%-0.5em 50%-0.5em;
-        grid-template-rows: 50%-0.5em 50%-0.5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     ul li {
