@@ -8,6 +8,12 @@ body {
     background-color: #f1f1f1;
 }
 
+h1,
+h2,
+h3 {
+    color: rgb(126, 9, 9);
+}
+
 p {
     margin-bottom: 0.1em;
 }
@@ -38,11 +44,12 @@ ul li {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 3em 2em 70vh 3em;
+    grid-template-rows: 3em 2em auto 10em 3em;
     grid-template-areas:
         'header'
         'navbar'
         'content'
+        'subscribe'
         'footer';
     column-gap: 1px;
     row-gap: 1px;
@@ -118,6 +125,21 @@ ul li {
     background: rgba(204, 204, 204, 0.6);
 }
 
+/*** Articles ************************************/
+.article {
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px grey;
+}
+
+.article img {
+    float: right;
+    padding-left: 1em;
+    width: 60%;
+    max-width: 600px;
+}
+
 /*** Featured Posts ******************************/
 #one {
     grid-area: one;
@@ -159,6 +181,16 @@ ul li {
     /* border: 1px solid red; */
 }
 
+#subscribe_form {
+    grid-area: subscribe;
+    padding-left: 1em;
+    box-shadow: 0px 2px 4px grey;
+}
+
+#subscribe_form form {
+    margin-top: 1em;
+}
+
 #footer {
     grid-area: footer;
     display: flex;
@@ -181,12 +213,13 @@ ul li {
 @media (min-width: 700px) {
     .container {
         display: grid;
-        width: 90%;
-        grid-template-columns: 140px 1fr;
-        grid-template-rows: 4em 80vh 50px;
+        width: 65%;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 4em 75vh 10em 50px;
         grid-template-areas:
             'header header'
             'navbar content'
+            'subscribe subscribe'
             'footer footer';
         column-gap: 1em;
         row-gap: 1em;

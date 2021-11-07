@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Grid</title>
+        <title>My Very Nice Blog on CSS</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="container">
-            <div id="header">
-                <h1>My Very Nice Blog</h1>
-            </div>
-            <div id="navbar">
+            <header id="header">
+                <h1>My Very Nice Blog on CSS</h1>
+            </header>
+            <nav id="navbar">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Recent Posts</a></li>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-            </div>
-            <div id="featured">
+            </nav>
+            <section id="featured">
                 <div class="blog-card-container">
                     <div class="card" id="one">
-                        <a href="#">
+                        <a href="featured_01.html">
                             <div class="card-header">
                                 <p class="post-title">Making Great Websites</p>
                                 <p class="post-author">Johnny Fair</p>
                                 <p class="post-date">
-                                    <img
-                                        src="../blog_project/icons/calendar.png"
-                                    />Oct 12, 2021
+                                    <img src="icons/calendar.png" />Oct 12, 2021
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div class="card" id="two">
-                        <a href="#">
+                        <a href="featured_01.html">
                             <div class="card-header">
                                 <p class="post-title">
                                     Using Transparency with CSS
                                 </p>
                                 <p class="post-author">Brad Cage</p>
                                 <p class="post-date">
-                                    <img
-                                        src="../blog_project/icons/calendar.png"
-                                    />Oct 4, 2021
+                                    <img src="icons/calendar.png" />Oct 4, 2021
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div class="card" id="three">
-                        <a href="#">
+                        <a href="featured_01.html">
                             <div class="card-header">
                                 <p class="post-title">
                                     Creating Awesome CSS Styles for Beginners
@@ -60,37 +56,42 @@
                                     Torben Sölermannhausen
                                 </p>
                                 <p class="post-date">
-                                    <img
-                                        src="../blog_project/icons/calendar.png"
-                                    />Aug 8, 2021
+                                    <img src="icons/calendar.png" />Aug 8, 2021
                                 </p>
                             </div>
                         </a>
                     </div>
                     <div class="card" id="four">
-                        <a href="#">
+                        <a href="featured_01.html">
                             <div class="card-header">
                                 <p class="post-title">
                                     Getting to Grips with CSS Styles
                                 </p>
                                 <p class="post-author">Peter Lightyear</p>
                                 <p class="post-date">
-                                    <img
-                                        src="../blog_project/icons/calendar.png"
-                                    />Aug 23, 2021
+                                    <img src="icons/calendar.png" />Aug 23, 2021
                                 </p>
                             </div>
                         </a>
                     </div>
                 </div>
-            </div>
-            <div id="footer">
+            </section>
+            <section id="subscribe_form">
+                <h2>Subscribe</h2>
+                <p>If you want to receive updates on new articles, please subscribe.</p>
+                <form>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </section>
+            <footer id="footer">
                 <p>
-                    <img src="../blog_project/icons/facebook.png" />
-                    <img src="../blog_project/icons/instagram.png" />
-                    <img src="../blog_project/icons/twitter.png" />
+                    <a href="#"><img src="icons/facebook.png" /></a>
+                    <a href="#"><img src="icons/instagram.png" /></a>
+                    <a href="#"><img src="icons/twitter.png" /></a>
                 </p>
-            </div>
+            </dfooter>
         </div>
     </body>
 </html>
