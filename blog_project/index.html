@@ -9,7 +9,7 @@
     <body>
         <div class="container">
             <header id="header">
-                <h1>My Very Nice Blog on CSS</h1>
+                <h1 class="page-title">My Very Nice Blog on CSS</h1>
             </header>
             <nav id="navbar">
                 <ul>
@@ -78,11 +78,33 @@
             </section>
             <section id="subscribe_form">
                 <h2>Subscribe</h2>
-                <p>If you want to receive updates on new articles, please subscribe.</p>
+                <p>
+                    If you want to receive updates on new articles, please
+                    subscribe.
+                </p>
                 <form>
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <input type="submit" value="Subscribe">
+                    <input
+                        type="email"
+                        class="form_email"
+                        placeholder="Enter your email address"
+                    />
+                    <div class="subscribe-checkbox">
+                        <input
+                            type="checkbox"
+                            id="subscribeCheck"
+                            name="subscribe"
+                            value="confirm"
+                        />
+                        <label for="subscribeCheck"
+                            >I confirm that my email can be used to
+                            subscribe.</label
+                        >
+                    </div>
+                    <input
+                        type="submit"
+                        class="subscribe-button"
+                        value="Subscribe"
+                    />
                 </form>
             </section>
             <footer id="footer">
@@ -91,7 +113,7 @@
                     <a href="#"><img src="icons/instagram.png" /></a>
                     <a href="#"><img src="icons/twitter.png" /></a>
                 </p>
-            </dfooter>
+            </footer>
         </div>
     </body>
 </html>

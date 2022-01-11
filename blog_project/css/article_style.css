@@ -1,0 +1,94 @@
+/*** Articles ************************************/
+
+.article {
+    padding: 1em;
+    background-color: white;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px grey;
+}
+
+.article-img {
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.article figcaption {
+    font-size: smaller;
+    text-align: center;
+}
+
+.article-date-img {
+    width: 1em;
+    margin-right: 0.5em;
+}
+
+.article-title {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.article-author {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.article-date {
+    font-size: 12px;
+}
+
+.article-share {
+    font-weight: 600;
+}
+
+.article-share a {
+    color: #65a9d6;
+    text-decoration: none;
+}
+
+.article-share a:hover {
+    text-decoration: underline;
+}
+
+.article blockquote {
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.author-bio {
+    font-size: 0.8em;
+    max-width: 360px;
+}
+
+.author-bio h3 {
+    font-size: 1.5em;
+}
+
+/*** Featured Posts ******************************/
+#one {
+    grid-area: one;
+    background-image: url(../imgs/altumcode-XMFZqrGyV-Q-unsplash.jpg);
+    min-height: 200px;
+    background-size: cover;
+}
+#two {
+    grid-area: two;
+    background-image: url(../imgs/markus-spiske-Fa0pTKuoDVY-unsplash.jpg);
+    min-height: 200px;
+    background-size: cover;
+}
+#three {
+    grid-area: three;
+    background-image: url(../imgs/michael-dziedzic-aQYgUYwnCsM-unsplash.jpg);
+    min-height: 200px;
+    background-size: cover;
+}
+#four {
+    grid-area: four;
+    background-image: url(../imgs/danial-igdery-FCHlYvR5gJI-unsplash.jpg);
+    min-height: 200px;
+    background-size: cover;
+}

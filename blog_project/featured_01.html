@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="container">
+        <div class="article-container">
             <header id="header">
-                <h1>My Very Nice Blog on CSS</h1>
+                <h1 class="page-title">My Very Nice Blog on CSS</h1>
             </header>
             <nav id="navbar">
                 <ul>
@@ -20,43 +20,96 @@
                 </ul>
             </nav>
             <section class="article">
-                <h3>Title of The Article</h3>
-                <img src="imgs/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+                <h3 class="article-title">Title of The Article</h3>
+                <p class="article-author">By John Fairy</p>
+                <p class="article-date"><img class="article-date-img" src="icons/calendar.png" />Oct 23, 2021</p>
+                <hr>
+                
+                <figure>
+                    <img class="article-img" src="imgs/altumcode-XMFZqrGyV-Q-unsplash.jpg">
+                    <figcaption class="article-img-caption">This is a caption for the image</figcaption>
+                </figure>
+
                 <h4>Intro</h4>
                 <p>This is a <em>very</em> nice article. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
                     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    
                     <h4>Caption One</h4>
-            </p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-            ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-            ipsum dolor sit amet.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                    </p>At vero eos et <b>accusam et justo duo dolores</b> et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+                    Lorem ipsum dolor sit amet, consetetur
+                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                    ipsum dolor sit amet.
+                    Duis autem vel eum iriure dolor in <u>hendrerit in vulputate</u> velit esse molestie consequat, vel illum dolore eu feugiat
                     nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
                     duis dolore te feugait nulla facilisi.</p>
+
                     <h4>Caption Two</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
                     commodo consequat.</p>
+
+                    <blockquote>"Lorem ipsum says Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                        nulla facilisis at vero eros et accumsan et [...] iusto odio dignissim qui blandit praesent luptatum zzril delenit augue
+                        duis dolore te feugait nulla facilisi."</blockquote>
+
                     <h4>Caption Four</h4>
                     <p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
-                        feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-                        zzril delenit augue duis dolore te feugait nulla facilisi.
+                    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+                    zzril delenit augue duis dolore te feugait nulla facilisi.<br>
                     Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
                     possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidun
                     ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
                     ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.   
                     Duis autem vel eum iriure</p>
+
+                    <hr>
+
+                    <div class="author-bio">
+                        <h3>Author Bio</h3>
+                        <p>John Fairy is a great man. Nam liber tempor cum soluta nobis 1985 eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                        possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidun
+                        ut laoreet dolore magna 2012 <em>aliquam erat volutpat</em>. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper suscipit lobortis 2021 nisl ut aliquip ex ea commodo consequat.   
+                        Duis autem vel eum iriure</p>
+                    </div>
+
+                    <hr>
+
+                    <p class="article-share"><a href="">Share This Article...</a></p>
             </section>
             <section id="subscribe_form">
                 <h2>Subscribe</h2>
-                <p>If you want to receive updates on new articles, please subscribe.</p>
+                <p>
+                    If you want to receive updates on new articles, please
+                    subscribe.
+                </p>
                 <form>
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <input type="submit" value="Subscribe">
+                    <input
+                        type="email"
+                        class="form_email"
+                        placeholder="Enter your email address"
+                    />
+                    <div class="subscribe-checkbox">
+                        <input
+                            type="checkbox"
+                            id="subscribeCheck"
+                            name="subscribe"
+                            value="confirm"
+                        />
+                        <label for="subscribeCheck"
+                            >I confirm that my email can be used to
+                            subscribe.</label
+                        >
+                    </div>
+                    <input
+                        type="submit"
+                        class="subscribe-button"
+                        value="Subscribe"
+                    />
                 </form>
             </section>
             <footer id="footer">

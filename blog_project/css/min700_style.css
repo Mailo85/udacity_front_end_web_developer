@@ -1,0 +1,46 @@
+/* Min 700 pixels Style *******************************/
+
+.container {
+    display: grid;
+    width: 65%;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 4em 65vh auto 50px;
+    grid-template-areas:
+        'header header'
+        'navbar content'
+        'subscribe subscribe'
+        'footer footer';
+    column-gap: 1em;
+    row-gap: 1em;
+    margin: auto;
+    /* border: 2px solid green; */
+    justify-content: center;
+}
+
+.blog-card-container {
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.article-container {
+    display: grid;
+    width: 65%;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 4em auto auto 50px;
+    grid-template-areas:
+        'header header'
+        'navbar content'
+        'subscribe subscribe'
+        'footer footer';
+    column-gap: 1em;
+    row-gap: 1em;
+    margin: auto;
+    /* border: 2px solid green; */
+    justify-content: center;
+}
+
+ul li {
+    display: block;
+}
